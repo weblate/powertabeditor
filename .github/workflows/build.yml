@@ -148,7 +148,7 @@ jobs:
       shell: bash
 
     - name: Install Dependencies
-      run: vcpkg install --triplet x64-windows boost-algorithm boost-date-time boost-endian boost-functional boost-iostreams boost-rational boost-signals2 boost-stacktrace doctest minizip nlohmann-json pugixml
+      run: vcpkg install --triplet x64-windows boost-algorithm boost-date-time boost-endian boost-functional boost-iostreams boost-rational boost-signals2 boost-stacktrace doctest minizip[unofficial-iowin32] nlohmann-json pugixml
 
     # Building Qt via vcpkg would take a while ...
     - name: Install Qt
